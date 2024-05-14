@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #23272e !important;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between !important;
+}
+
+.notFound {
+  flex-direction: column;
+  height: 350px;
+  background: url("/public/sky.jpg") no-repeat;
+}
+
+.notFound a {
+  font-size: 40px;
+}
+
+.notFoundDesc {
+  text-decoration: none;
+  color: white;
+  font-size: 20px !important;
+}
+
+.holder {
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+}
+
+.holder h1,
+.holder h2 {
+  color: cyan;
+  text-align: center;
+}
+
+#planetHuge {
+  margin-top: 30px;
+  width: 10rem;
+}
+
+.descriptionBox a {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.descriptionBox,
+.arguments {
+  margin-top: 5rem;
+  flex-direction: column;
+}
+
+.descriptionBox {
+  width: 80%;
+}
+
+.arguments ul {
+  margin-top: 30px;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.arguments ul li {
+  width: 20rem;
+  height: 15rem;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.holder h5 {
+  margin-top: 5rem;
+  color: cyan;
+  text-align: center;
+}
+
+.title {
+  color: cyan;
+  font-weight: bold;
+}
+
+.projectName {
+  height: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  color: cyan;
+}
+
+#planet {
+  width: 40px;
+  margin-left: 10px;
+}
+
+#planet path,
+#planetHuge path {
+  fill: rgb(0, 255, 255);
+}
+
+.linkBox {
+  height: 100%;
+}
+
+.navLink,
+.navLinkBurger {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  font-size: 22px;
+}
+
+.navLink + .navLink {
+  margin-left: 20px;
+}
+
+.navLink:hover,
+.navLinkBurger:hover {
+  color: cyan;
+  transform: scale(1.05);
+}
+
+.projectName,
+.linkBox,
+.loginBox {
+  width: 30%;
+}
+
+.pageContent {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.glowingBox {
+  flex-direction: column;
+  height: auto;
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 6px rgba(0, 255, 255, 0.5);
+  padding: 40px;
+  text-align: center;
+}
+
+.glowingBox p {
+  font-size: 30px;
+}
+
+.glowingBox button,
+.holder button {
+  transition: 0.2s ease-in-out;
+  background-color: rgb(0, 196, 196);
+  border: none;
+}
+
+.glowingBox button {
+  margin-top: 40px;
+}
+
+.glowingBox button:hover,
+.holder button:hover {
+  background-color: rgb(0, 255, 255);
+  transform: scale(1.05);
+}
+
+.loginBox {
+  height: 100%;
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginBox a {
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.loginBox img {
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.loginBox button {
+  transition: 0.2s ease-in-out;
+  border: none;
+  background-color: rgb(196, 0, 0);
+}
+
+.loginBox button:hover {
+  transform: scale(1.05);
+  background-color: rgb(255, 0, 0);
+}
+
+.glowingBox form {
+  width: 100%;
+  height: 70%;
+  flex-direction: column;
+}
+
+.glowingBox input + input {
+  margin-top: 20px;
+}
+
+.glowingBox form p {
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.titleBox {
+  margin-bottom: 40px;
+}
+
+.formFieldHolder {
+  width: 70%;
+}
+
+.formField:focus {
+  box-shadow: 0px 0px 25px 2px rgba(0, 255, 255, 0.5) !important;
+}
+
+input[value="Publish"] {
+  margin-top: 20px;
+  width: 80px;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: green;
+  transition: 0.2s ease-in-out;
+}
+
+input[value="Publish"]:hover {
+  background-color: rgb(0, 172, 0);
+  transform: scale(1.05);
+}
+
+.post {
+  margin: 80px 80px 80px 80px;
+  flex-direction: column;
+  height: auto;
+  max-width: 30%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 6px rgba(0, 255, 255, 0.5);
+  padding: 50px;
+}
+
+.post .title {
+  width: 100%;
+}
+
+.post .body {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.post .footer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.post > a {
+  width: 100%;
+}
+
+.post .date {
+  width: 100%;
+  margin-top: 5px;
+  flex-direction: column;
+}
+
+.post .likes {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.post .date > a {
+  font-size: 13px;
+}
+
+.post a {
+  text-decoration: none;
+  color: white;
+}
+
+.post button {
+  border: none;
+  background: none;
+}
+
+.post button + button {
+  margin-left: 10px;
+}
+
+.post svg {
+  width: 30px;
+  height: 30px;
+}
+
+.post svg path {
+  fill: white;
+  transition: 0.2s ease-in-out;
+}
+
+.post .likes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.like:hover path {
+  fill: lime;
+  transform: scale(1.05);
+}
+
+.dislike:hover path {
+  fill: red;
+  transform: scale(1.05);
+}
+
+.alreadyLiked path {
+  fill: lime !important;
+}
+
+.alreadyDisliked path {
+  fill: red !important;
+}
+
+.likeNumber {
+  margin-right: 20px;
+}
+
+.holder {
+  flex-direction: column;
+  max-width: 80%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.cookieConsent {
+  flex-direction: column;
+  position: fixed;
+  top: 15rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 60px;
+  z-index: 999;
+}
+
+.cookieConsent button {
+  margin-top: 2rem;
+  transition: 0.2s ease-in-out;
+}
+
+.cookieConsent button + button {
+  margin-left: 30px;
+}
+
+.cookieConsent button:hover {
+  transform: scale(1.05);
+}
+
+.cookieConsent button#decline {
+  background-color: rgb(196, 0, 0);
+}
+
+.cookieConsent button#decline:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.cookieConsent button#accept {
+  background-color: rgb(0, 196, 0);
+}
+
+.cookieConsent button#accept:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.linkBoxBurger {
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: auto;
+  top: 0 !important;
+}
+
+.navLinkBurger {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.navLinkBurger + .navLinkBurger {
+  border-top: 1px solid black;
+}
+
+#menu {
+  width: 100%;
+  height: 100%;
+}
+
+#menu path {
+  fill: white;
+}
+
+#menuButton {
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 1350px) {
+  .glowingBox {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1040px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .body,
+  .footer,
+  .date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 935px) {
+  .body,
+  .footer,
+  .date {
+    font-size: 12px;
+  }
+  .post {
+    max-width: none;
+  }
+}
+
+@media (max-width: 935px) {
+  .loggedUser a {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  #menuButton {
+    display: flex;
+  }
+  .navLink {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .holder ul li {
+    width: auto;
+    height: auto;
+  }
+
+  .holder ul {
+    width: auto;
+  }
+}
+
+@media (max-width: 535px) {
+  .projectName a {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .loggedUser img {
+    display: none;
+  }
+}
