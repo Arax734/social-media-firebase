@@ -4,6 +4,8 @@ An application written in React in which a user, after logging in, can add posts
 
 Agreeing to cookies allows you to display your liked posts and those with similar titles first, so you can better tailor your content to you.
 
+The application is available [here](https://social-media-project-2c93c.web.app).
+
 # Project configuration
 
 In the first step, paste your own data in the firebase.ts file in the firebaseConfig variable. Next, you need to run Google authentication on your Firebase services and create a Firestore database, which will contain the following collections:
